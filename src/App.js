@@ -36,7 +36,8 @@ function App() {
       .getPlayers()
       .call({ from: manager_address[0] })
       .then((res) => console.log("RES", res.length));*/
-    setManager(manager_address);
+    console.log("Your Address", manager_address);
+    setManager("0x9be875f166af3dae5371e210041a8a1d001e63f5");
     setAddress(address);
     return getBalance();
   };
@@ -101,7 +102,7 @@ function App() {
         <div className="card-header fs-5">Contract: {contractAddress}</div>
         <div className="card-body">
           <p className="card-text my-0">
-            <strong>Manager:</strong> 0x9be875f166af3dae5371e210041a8a1d001e63f5
+            <strong>Manager:</strong> {manager}
           </p>
           <p className="card-text border-bottom pb-2">
             <strong>Balance:</strong>{" "}
