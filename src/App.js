@@ -101,7 +101,7 @@ function App() {
         <div className="card-header fs-5">Contract: {contractAddress}</div>
         <div className="card-body">
           <p className="card-text my-0">
-            <strong>Manager:</strong> {manager}
+            <strong>Manager:</strong> 0x9be875f166af3dae5371e210041a8a1d001e63f5
           </p>
           <p className="card-text border-bottom pb-2">
             <strong>Balance:</strong>{" "}
